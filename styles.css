@@ -133,14 +133,12 @@ h2{font-size: 28px; margin: 0 0 12px;}
 .step-visual > *{width: 100%; max-width: 280px; min-height: 92px; display:flex; align-items:center; justify-content:center;}
 
 .logo-wrap{position:relative; display:inline-flex; align-items:center; justify-content:center; padding: 14px 16px; border-radius: 16px; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.03);}
-.skimmer-logo{height: 20px; width: auto; display:block; filter: saturate(1.05) brightness(1.05);}
+.skimmer-logo{height: 26px; width: auto; display:block; filter: saturate(1.05) brightness(1.08);}
 .badge-check{position:absolute; right:-9px; top:-9px; width: 24px; height: 24px; border-radius: 999px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, var(--brand), var(--brand2)); box-shadow: 0 10px 25px rgba(0,0,0,.35);}
-.badge-check img{width: 14px; height: 14px;}
+.badge-check img{width: 14px; height: 14px; filter: invert(1) brightness(2);}
 
 .sms-mock{width: 100%; border-radius: 16px; border: 1px solid rgba(255,255,255,.10); background: rgba(0,0,0,.18); padding: 12px;}
-.sms-top{display:flex; align-items:center; gap: 8px; color: var(--muted2); font-size: 12px; margin-bottom: 8px; justify-content:flex-start; width: 100%;}
-.sms-ico{width: 16px; height: 16px; color: var(--muted2);}
-.sms-bubble{width: 100%; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.10); border-radius: 14px; padding: 10px 10px; color: var(--muted); font-size: 13px; line-height: 1.35;}
+.sms-bubble{width: 100%; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.10); border-radius: 14px; padding: 12px 12px; color: var(--muted); font-size: 13px; line-height: 1.35;}
 
 .track-mock{width: 100%; display:flex; align-items:center; justify-content:center; gap: 12px; padding: 14px 16px; border-radius: 16px; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.03);}
 .track-ico{width: 18px; height: 18px; color: var(--muted2);}
