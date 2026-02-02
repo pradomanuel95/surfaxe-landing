@@ -1,0 +1,8 @@
+# Local preview logs
+.preview.log
+
+# OS junk
+.DS_Store
+
+# Env
+.env
