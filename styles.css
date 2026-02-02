@@ -125,7 +125,28 @@ h2{font-size: 28px; margin: 0 0 12px;}
 .metric-label{color: var(--muted2); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; margin-top: 2px;}
 
 .grid-3{display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px;}
-.step{width: 34px; height: 34px; border-radius: 10px; display:flex; align-items:center; justify-content:center; font-weight: 900; color:#081022; background: linear-gradient(135deg, var(--brand), var(--brand2)); margin-bottom: 10px;}
+.step-row{display:flex; align-items:flex-start; justify-content:space-between; gap: 12px; margin-bottom: 10px;}
+.step{width: 34px; height: 34px; border-radius: 10px; display:flex; align-items:center; justify-content:center; font-weight: 900; color:#081022; background: linear-gradient(135deg, var(--brand), var(--brand2)); flex: 0 0 auto;}
+.step-icon{flex: 1 1 auto; display:flex; justify-content:flex-end;}
+
+.logo-wrap{position:relative; display:inline-flex; align-items:center; justify-content:center; padding: 10px 12px; border-radius: 14px; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.03);}
+.skimmer-logo{height: 18px; width: auto; display:block; filter: saturate(1.05) brightness(1.05);}
+.badge-check{position:absolute; right:-8px; top:-8px; width: 22px; height: 22px; border-radius: 999px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, var(--brand), var(--brand2)); box-shadow: 0 10px 25px rgba(0,0,0,.35);}
+.badge-check img{width: 14px; height: 14px; color:#081022;}
+
+.sms-mock{width: 100%; max-width: 240px; border-radius: 14px; border: 1px solid rgba(255,255,255,.10); background: rgba(0,0,0,.18); padding: 10px;}
+.sms-top{display:flex; align-items:center; gap: 8px; color: var(--muted2); font-size: 12px; margin-bottom: 8px;}
+.sms-ico{width: 16px; height: 16px; color: var(--muted2);}
+.sms-bubble{background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.10); border-radius: 14px; padding: 10px 10px; color: var(--muted); font-size: 13px; line-height: 1.35;}
+
+.track-mock{display:flex; align-items:center; gap: 10px; padding: 10px 12px; border-radius: 14px; border: 1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.03);}
+.track-ico{width: 18px; height: 18px; color: var(--muted2);}
+.track-bars{display:flex; align-items:flex-end; gap: 6px; height: 22px;}
+.track-bars span{display:block; width: 8px; border-radius: 6px; background: linear-gradient(180deg, rgba(110,231,255,.95), rgba(124,92,255,.95));}
+.track-bars span:nth-child(1){height: 9px; opacity:.65}
+.track-bars span:nth-child(2){height: 16px; opacity:.75}
+.track-bars span:nth-child(3){height: 12px; opacity:.7}
+.track-bars span:nth-child(4){height: 20px; opacity:.85}
 
 .proof{display:grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px;}
 .proof-title{font-weight: 800; margin-bottom: 10px;}
