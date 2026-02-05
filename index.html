@@ -172,13 +172,25 @@
       <div class="container">
         <h2>FAQ</h2>
         <div class="card">
-          <details>
+          <details open>
             <summary>Will my customers find this annoying?</summary>
             <p class="muted">No. We send one message at the perfect time, when they just experienced great service. Plus, our system tracks who already reviewed you, so they never get asked twice.</p>
           </details>
           <details>
             <summary>What’s included in the $49/month?</summary>
             <p class="muted">Everything, the AI system, automated messaging, smart routing (happy customers to Google, unhappy customers to private feedback), and review tracking. You only pay extra for the actual text messages sent (3¢ each).</p>
+          </details>
+          <details>
+            <summary>Can I control who gets review requests?</summary>
+            <p class="muted">Yes. You can choose new clients only, existing active clients, or both. We also support basic send window rules so requests go out at sensible hours.</p>
+          </details>
+          <details>
+            <summary>How fast can this be live?</summary>
+            <p class="muted">Most setups take 1 to 2 business days after you submit the onboarding form.</p>
+          </details>
+          <details>
+            <summary>Do I need to change my process or train my techs?</summary>
+            <p class="muted">No. The goal is zero extra work for your team. The request is triggered automatically after service completion.</p>
           </details>
         </div>
       </div>
@@ -234,5 +246,9 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
+  <div class="mobile-cta" aria-hidden="false">
+    <a class="btn primary block" href="#get-started">Start Getting More Reviews</a>
+  </div>
 </body>
 </html>
