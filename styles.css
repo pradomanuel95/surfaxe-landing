@@ -161,16 +161,21 @@ h2{font-size: 28px; margin: 0 0 12px;}
 .pricing{display:grid; grid-template-columns: 1fr 1fr; gap: 14px;}
 
 .price-row{display:flex; align-items:baseline; justify-content:space-between; gap: 12px; flex-wrap:wrap;}
-.price-pill{
+
+.setup-offer{
   display:inline-flex;
   align-items:center;
+  gap: 8px;
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 850;
   color:#081022;
   background: linear-gradient(135deg, var(--brand), var(--brand2));
+  line-height: 1.2;
 }
+.setup-was{opacity: .85; text-decoration: line-through; text-decoration-thickness: 2px;}
+.setup-now{opacity: 1;}
 
 .price-card .price{font-size: 48px; font-weight: 950; letter-spacing: -0.03em;}
 .price-card .price span{font-size: 16px; color: var(--muted2); font-weight: 700; margin-left: 6px;}
