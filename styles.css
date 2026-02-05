@@ -159,6 +159,19 @@ h2{font-size: 28px; margin: 0 0 12px;}
 .proof-img{width: 100%; border-radius: 14px; border: 1px solid rgba(255,255,255,.12); display:block;}
 
 .pricing{display:grid; grid-template-columns: 1fr 1fr; gap: 14px;}
+
+.price-row{display:flex; align-items:baseline; justify-content:space-between; gap: 12px; flex-wrap:wrap;}
+.price-pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  color:#081022;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+}
+
 .price-card .price{font-size: 48px; font-weight: 950; letter-spacing: -0.03em;}
 .price-card .price span{font-size: 16px; color: var(--muted2); font-weight: 700; margin-left: 6px;}
 
