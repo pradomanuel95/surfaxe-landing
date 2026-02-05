@@ -162,7 +162,7 @@ h2{font-size: 28px; margin: 0 0 12px;}
 
 .price-row{display:flex; align-items:baseline; justify-content:space-between; gap: 12px; flex-wrap:wrap;}
 
-.setup-offer{
+.addon-pill{
   display:inline-flex;
   align-items:center;
   gap: 8px;
@@ -171,11 +171,11 @@ h2{font-size: 28px; margin: 0 0 12px;}
   font-size: 13px;
   font-weight: 850;
   color:#081022;
-  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  background: linear-gradient(135deg, rgba(110,231,255,.95), rgba(124,92,255,.85));
   line-height: 1.2;
 }
-.setup-was{opacity: .85; text-decoration: line-through; text-decoration-thickness: 2px;}
-.setup-now{opacity: 1;}
+.addon-strong{opacity: 1;}
+.addon-muted{opacity: .92; font-weight: 800;}
 
 .price-card .price{font-size: 48px; font-weight: 950; letter-spacing: -0.03em;}
 .price-card .price span{font-size: 16px; color: var(--muted2); font-weight: 700; margin-left: 6px;}
