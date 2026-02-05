@@ -102,6 +102,11 @@ h1{font-size: 44px; line-height: 1.08; margin: 0 0 14px;}
 
 h2{font-size: 28px; margin: 0 0 12px;}
 
+/* Social proof / stats */
+.social-proof{display:flex; flex-direction:column; gap: 6px;}
+.sp-head{margin:0; font-size: 20px;}
+.stat{font-size: 40px; font-weight: 950; letter-spacing: -0.03em; margin-bottom: 6px;}
+
 .card{
   background: var(--panel);
   border: 1px solid rgba(255,255,255,.12);
