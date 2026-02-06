@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surfaxe | Draft B (Protect Your Route)</title>
+  <meta name="description" content="Draft landing page concept, retention-first feedback alerts framing for Surfaxe." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">Surfaxe</div>
+      <nav class="topnav" aria-label="Primary">
+        <a href="index.html">Current page</a>
+        <a href="#routing">Routing</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#get-started" class="btn small">Turn on alerts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="tag">Draft B, Protect your route (built for Skimmer pool service companies)</div>
+          <h1>Catch unhappy customers before they leave a 1-star review</h1>
+          <p class="lead">Surfaxe is a simple feedback safety net for recurring routes. Happy customers get your Google link, unhappy customers get a private feedback prompt, and you get alerted so you can save the account.</p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#get-started">Turn on feedback alerts</a>
+            <a class="btn ghost" href="#routing">See how routing works</a>
+          </div>
+
+          <ul class="bullets">
+            <li>$49/mo for weekly service customers (no setup fee)</li>
+            <li>Optional $99 one-time add-on for repairs and one time jobs</li>
+            <li>One customer-friendly text, no duplicates</li>
+          </ul>
+        </div>
+
+        <div class="card hero-card" aria-label="Ops summary">
+          <div class="kicker">Ops summary</div>
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-value">Alerts</div>
+              <div class="metric-label">for issues</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">4 to 5</div>
+              <div class="metric-label">to Google</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">1 to 3</div>
+              <div class="metric-label">private</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p class="muted">The goal is to hear about problems early, and keep customers on your route. Review growth becomes the side effect.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>The silent churn problem</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Recurring service is fragile</h3>
+            <p class="muted">One bad visit can lose a long-term account. Most customers do not complain first.</p>
+          </div>
+          <div class="card">
+            <h3>You want the first signal</h3>
+            <p class="muted">A private feedback reply is a chance to fix issues before they become public reviews.</p>
+          </div>
+          <div class="card">
+            <h3>Then you grow reviews</h3>
+            <p class="muted">When customers are happy, we make leaving a review simple and fast.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="routing" class="section">
+      <div class="container">
+        <h2>Feedback routing, simple and customer-friendly</h2>
+        <div class="grid-3">
+          <div class="card">
+            <div class="step-row"><div class="step">1</div></div>
+            <h3>Ask at the right time</h3>
+            <p class="muted">Weekly cleanings, after 30 days. Repairs and one time jobs, next morning (optional add on).</p>
+          </div>
+          <div class="card">
+            <div class="step-row"><div class="step">2</div></div>
+            <h3>Route by sentiment</h3>
+            <p class="muted">4 to 5 stars, we send your Google link. 1 to 3 stars, we ask for private feedback.</p>
+          </div>
+          <div class="card">
+            <div class="step-row"><div class="step">3</div></div>
+            <h3>Fix issues fast</h3>
+            <p class="muted">You get alerted, and you can follow up before the customer disappears or posts publicly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="pricing">
+          <div class="card price-card">
+            <div class="price-row">
+              <div class="price">$49<span>/month</span></div>
+              <div class="addon-pill" aria-label="Repairs add on">
+                <span class="addon-strong">+$99</span>
+                <span class="addon-muted">one time repairs add on</span>
+              </div>
+            </div>
+            <p class="muted">Plus 3¢ per text message sent</p>
+            <p class="fineprint">No setup fee for weekly service customers. Repairs and one time jobs require a $99 one time setup to connect the email trigger.</p>
+            <div class="divider"></div>
+            <p class="muted"><strong>Why this pays for itself:</strong> saving one recurring account usually covers the cost for months.</p>
+            <a class="btn primary block" href="#get-started">Turn on feedback alerts</a>
+          </div>
+
+          <div class="card">
+            <h3>What you get</h3>
+            <ul class="bullets">
+              <li>Weekly 30-day timing built in</li>
+              <li>Private feedback capture for problems</li>
+              <li>Review tracking to avoid duplicate asks</li>
+              <li>Routing to Google for happy customers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started" class="section">
+      <div class="container">
+        <h2>Turn on feedback alerts</h2>
+        <p class="muted">This is a draft concept page. Form submits to the same Netlify form.</p>
+
+        <form class="form" name="get-started" method="POST" data-netlify="true" action="/thanks.html">
+          <input type="hidden" name="form-name" value="get-started" />
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Company</span>
+              <input name="company" autocomplete="organization" />
+            </label>
+            <label>
+              <span>Phone (optional)</span>
+              <input name="phone" autocomplete="tel" />
+            </label>
+          </div>
+          <label>
+            <span>Anything we should know?</span>
+            <textarea name="message" rows="4" placeholder="Example, add the repairs flow too"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Turn on feedback alerts</button>
+          <p class="fineprint">By submitting you agree to our <a href="privacy.html">privacy policy</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="muted">Draft B, Protect your route</div>
+        <div class="footer-links">
+          <a href="index.html">Current page</a>
+          <a href="draft-sprint.html">Draft A</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="mobile-cta" aria-hidden="false">
+    <a class="btn primary block" href="#get-started">Turn on feedback alerts</a>
+  </div>
+</body>
+</html>
