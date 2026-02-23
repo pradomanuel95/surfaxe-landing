@@ -1,0 +1,190 @@
+:root{
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --line: rgba(15,23,42,.10);
+  --text: #0f172a;
+  --muted: rgba(15,23,42,.72);
+  --hot: #2563eb;   /* blue CTA */
+  --hot2:#22c55e;   /* green accent */
+  --cool:#2563eb;   /* accent */
+  --shadow: 0 18px 50px rgba(15,23,42,.12);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* Render gradients on a separate fixed layer to reduce banding/lines while scrolling */
+body::before{
+  content:"";
+  position: fixed;
+  inset: -260px;
+  z-index: -1;
+  pointer-events: none;
+  /* Keep the accent as a true circle fully inside the viewport, no layer edge */
+  background:
+    radial-gradient(circle 520px at 84% 10%, rgba(34,197,94,.52) 0%, rgba(37,99,235,.22) 38%, rgba(37,99,235,0) 72%),
+    radial-gradient(900px 500px at 15% -5%, rgba(37,99,235,.14), transparent 55%);
+  opacity: 1;
+}
+
+.wrap{max-width: 1100px; margin: 0 auto; padding: 0 18px;}
+
+.bar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(247,249,252,.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.bar-inner{display:flex; align-items:center; justify-content:space-between; height:64px;}
+.brand{font-weight: 950; letter-spacing: .2px;}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  text-decoration:none;
+  font-weight: 850;
+}
+.btn:hover{background: rgba(15,23,42,.03)}
+.btn.primary{
+  border: none;
+  background: linear-gradient(135deg, var(--hot), var(--hot2));
+  color: #ffffff;
+}
+.btn.block{width:100%}
+
+.hero{padding: 62px 0 22px;}
+.stamp{
+  display:inline-block;
+  max-width: 100%;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(15,23,42,.72);
+  background: rgba(37,99,235,.08);
+  border: 1px solid rgba(37,99,235,.18);
+  padding: 8px 10px;
+  border-radius: 999px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+h1{font-size: 48px; line-height: 1.05; margin: 14px 0 12px;}
+.lead{color: var(--muted); font-size: 18px; margin: 0 0 16px; max-width: 70ch;}
+
+.cta{display:flex; gap: 12px; flex-wrap: wrap; margin: 18px 0;}
+
+.strip{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+.strip-item{
+  border: 1px solid rgba(37,99,235,.18);
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.k{font-weight: 950; font-size: 18px;}
+.s{color: rgba(15,23,42,.72); font-size: 13px; margin-top: 4px;}
+
+.section{padding: 44px 0;}
+.section.alt{background: rgba(15,23,42,.03); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);}
+
+.grid{display:grid; grid-template-columns: 1.1fr .9fr; gap: 14px;}
+.panel{
+  border: 1px solid rgba(37,99,235,.18);
+  background: rgba(37,99,235,.08);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+h2{margin: 0 0 10px; font-size: 26px;}
+.muted{color: var(--muted)}
+.tiny{font-size: 12px; color: rgba(15,23,42,.52); margin-top: 10px;}
+
+.inputs{display:grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px;}
+.in{border: 1px solid rgba(37,99,235,.18); background: rgba(15,23,42,.03); border-radius: 14px; padding: 12px;}
+.lbl{font-size: 12px; color: rgba(15,23,42,.55); text-transform: uppercase; letter-spacing: .10em;}
+.fake{font-weight: 950; margin-top: 8px;}
+
+.result{display:flex; align-items:flex-start; justify-content:space-between; gap: 14px; border: 1px solid rgba(37,99,235,.18); background: rgba(37,99,235,.08); border-radius: 16px; padding: 14px; margin-top: 12px;}
+.big{font-size: 34px; font-weight: 950; line-height: 1.05; white-space: nowrap;}
+.hint{color: rgba(15,23,42,.72); font-size: 13px; max-width: 40ch;}
+
+/* Ensure clear separation between the result box and the CTA on mobile */
+.panel a.btn.block{margin-top: 14px;}
+
+.tiles{display:grid; grid-template-columns: 1fr; gap: 10px; margin-top: 14px;}
+.tile{border: 1px solid var(--line); background: rgba(15,23,42,.03); border-radius: 16px; padding: 14px;}
+.t{font-weight: 950; margin-bottom: 6px;}
+
+.quote{margin-top: 12px; border-left: 3px solid rgba(37,99,235,.45); padding-left: 12px;}
+.q{font-weight: 850;}
+
+.banner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 14px;
+  border: 1px solid rgba(37,99,235,.18);
+  background: linear-gradient(135deg, rgba(37,99,235,.10), rgba(34,197,94,.10));
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.b-h{font-size: 12px; letter-spacing: .10em; text-transform: uppercase; color: rgba(15,23,42,.55);}
+.b-p{font-weight: 950; font-size: 18px; margin-top: 4px;}
+
+.start{max-width: 780px;}
+.form{margin-top: 14px; border: 1px solid rgba(37,99,235,.18); background: rgba(15,23,42,.03); border-radius: 18px; padding: 16px;}
+.r{display:flex; align-items:center; justify-content:space-between; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line);}
+.r:first-child{border-top:none}
+.f{color: rgba(15,23,42,.72);}
+.box{height: 34px; width: 58%; border-radius: 12px; border: 1px solid var(--line); background: #fff;}
+.box.small{width: 24%;}
+
+.links{display:flex; gap: 14px; margin-top: 12px;}
+.links a{color: rgba(15,23,42,.72);}
+
+.foot{padding: 30px 0 40px; border-top: 1px solid var(--line);}
+.foot-inner{display:flex; align-items:center; justify-content:space-between;}
+
+@media (max-width: 900px){
+  .grid{grid-template-columns: 1fr;}
+  .inputs{grid-template-columns: 1fr;}
+  .strip{grid-template-columns: 1fr;}
+}
+@media (max-width: 520px){
+  h1{font-size: 34px;}
+
+  /* Shorter badge, does not feel like it overflows */
+  .stamp{
+    font-size: 11px;
+    letter-spacing: .04em;
+    padding: 8px 10px;
+    border-radius: 16px;
+  }
+
+  /* Make the result block read cleanly on mobile */
+  .result{flex-direction: column; align-items: flex-start;}
+  .big{font-size: 44px;}
+  .hint{max-width: none;}
+}
